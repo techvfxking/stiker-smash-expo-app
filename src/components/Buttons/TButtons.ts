@@ -1,3 +1,5 @@
-export interface IButtonTypes{
-    label: string;
+export interface IButtonTypes {
+  label: string
+  theme?: string
+  onPressHandler?: () => void;
 }

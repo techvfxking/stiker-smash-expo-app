@@ -4,9 +4,10 @@ import { IImagePlaceHolder } from "./TImageViewer";
 import { styles } from "./ImageViewer.Styles";
 
 const ImageViewer = (props: IImagePlaceHolder) => {
-    return (
-    <Image source={props.ImageSrc} style={styles.image} />
-  );
+  const imageSource = props.selectedImage
+    ? { uri: props.selectedImage }
+    : props.ImageSrc
+    return <Image source={imageSource} style={styles.image} />
 }
 
 export default ImageViewer;

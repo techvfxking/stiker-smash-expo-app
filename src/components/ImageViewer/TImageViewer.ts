@@ -1,5 +1,6 @@
 import { ImageSourcePropType } from "react-native/Libraries/Image/Image"
 
 export interface IImagePlaceHolder {
-  ImageSrc: ImageSourcePropType
+  ImageSrc: ImageSourcePropType;
+  selectedImage: string;
 }
